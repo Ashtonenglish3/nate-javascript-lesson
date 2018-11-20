@@ -18,14 +18,14 @@
 //     //  message='How are you today?';
 // alert(message);
 
-// var name ='Ashton',
-//      age = '18',
-//      sport = 'soccer',
-//      address = 'Portlands',
-//      collage = 'Life Choices Academy',
-//      gender = 'male',
-//      car = 'nuhaha';
-//      console.log('My name is ' + name +' and i am ' + age + ' years old.'+ 'My favourite sport is ' + sport +'.I am from a suburb in Mitchells plain called ' + address +'.I am doing a coding course at ' + collage +'.My gender is ' + gender +'.'+'I travel with 4 people to college but there is this person that always makes us late and her name is ' + car +'.')
+var name ='Ashton',
+     age = '18',
+     sport = 'soccer',
+     address = 'Portlands',
+     collage = 'Life Choices Academy',
+     gender = 'male',
+     car = 'nuhaha';
+     console.log('My name is ' + name +' and i am ' + age + ' years old.'+ 'My favourite sport is ' + sport +'.I am from a suburb in Mitchells plain called ' + address +'.I am doing a coding course at ' + collage +'.My gender is ' + gender +'.'+'I travel with 4 people to college but there is this person that always makes us late and her name is ' + car +'.')
 // // ******************************************************
 // // ***********************************************************
 
