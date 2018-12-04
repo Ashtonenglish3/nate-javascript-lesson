@@ -8,14 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <!-- <script src="main.js"></script> -->
+    <style>
+    .red{
+        background-color:red;
+        border:none;
+        padding:10px;
+        margin:10px;
+    }
+    .blue{
+        background-color:blue;
+        border:none;
+        padding:10px;
+            margin:10px;
+    }
+    .purple{
+        background-color:purple;
+        border:none;
+        padding:10px;
+            margin:10px;
+    }
+     .green{
+        background-color:green;
+        border:none;
+        padding:10px;
+            margin:10px;
+    }
+    </style>
 </head>
 
 <body>
+     <p id="demo">The DOM is a W3C (World Wide Web Consortium) standard.</p>
+
+     <p id="demo2">The DOM is a W3C (World Wide Web Consortium) standard.</p>
+<button type="button" 
+onclick="document.getElementById('demo').style.color = 'blue'" class="blue">blue</button>
+<button type="button" 
+onclick="document.getElementById('demo').style.color = 'red'" class="red">red</button>
+
+<button type="button" class="purple" ondblclick="changeColor('purple');">purple</button>
+
+<button type="button" class="green" ondblclick="changeColor('green');">green</button>
+
+
 
     <!-- <script src="js/main.js">
     </script>
     <script src="js/condition.js"></script> -->
-    <script src="js/object.js"></script>
+    <script src="js/dom.js"></script>
     <!-- <script>
       console.log("Hello,im ashton")
     </script> -->

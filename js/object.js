@@ -62,17 +62,71 @@ layers(1,2,3.....10?!)
 
 // console.log("Hi i am " + name)
 // console.log("My favourite flavor is " + flavor)
-let cake={
-    flavor:"chocolate",
-    price:"R150",
-    layer:"3",
-    toppings:"oreo",
-    icing:"nutella"
+// let cake={
+//     flavor:"chocolate",
+//     price:"R150",
+//     layer:"3",
+//     toppings:"oreo",
+//     icing:"nutella"
 
-}
-console.log("The cake has my favourite flavor which is " + cake.flavor + " . " + " The price of the cake is " + cake.price + " with a amount of layers on the cake is " + cake.layer + ".It has a few " + cake.toppings + " biscuits on it" + " and is covered with " + cake.icing + " all over it.");
+// }
+// console.log("The cake has my favourite flavor which is " + cake.flavor + " . " + " The price of the cake is " + cake.price + " with a amount of layers on the cake is " + cake.layer + ".It has a few " + cake.toppings + " biscuits on it" + " and is covered with " + cake.icing + " all over it.");
 
 
-cake.layer = "5"
+// cake.layer = "5"
 
-console.log("The cake has my favourite flavor which is " + cake.flavor + " . " + " The price of the cake is " + cake.price + " with a amount of layers on the cake is " + cake.layer + ".It has a few " + cake.toppings + " biscuits on it" + " and is covered with " + cake.icing + " all over it.");
+// console.log("The cake has my favourite flavor which is " + cake.flavor + " . " + " The price of the cake is " + cake.price + " with a amount of layers on the cake is " + cake.layer + ".It has a few " + cake.toppings + " biscuits on it" + " and is covered with " + cake.icing + " all over it.");
+
+// Methods on objects
+
+// we had to write lengthy  console,log statements each time to show the cake desription.There a cleaner way to accomplish this.
+
+// adding a method to a object
+
+// Describe a cake
+
+// function describe(cake){
+//     var describe = "The " + cake.occasion + " cake has a " + cake.flavor + " flavor," + cake.layers + " layers, and cost " + cake.price + ".";
+//     return describe;
+// }
+
+// console.log(describe(cake));
+
+
+// the function describe() takes an object as a parameter.We pass it the cake, and it accesses that objects properties and prints them out in that sentence.
+
+// Now for an aleternative approach :creating a describe property that houses a method.
+
+let cake = {
+    flavor: "sweet-vanilla & caramel",
+    layers: 5,
+    price: "R300",
+    occasion : "birthday",
+
+
+
+// Describe the cake
+describe: function (){
+    var description = "The " + this.occasion + " cake has a " + this.flavor + " flavor," + this.layers +"layers, and cost " + this.price + ".";
+    return description
+    
+ }
+};
+
+console.log(cake.describe());
+
+// the cake is actually for the wedding!
+
+cake.occasion = "wedding";
+
+// now our objecy has a new property available to it describe.The value of this property is a functionn that returns a text description of the cake.
+
+// A property whose value is a function is called a method,
+
+/* --------
+Remember the parenthesis ,even if empty ,when calling a method!
+------------*/
+
+
+
+
